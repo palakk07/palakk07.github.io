@@ -5,7 +5,7 @@ var loginTxt = "Sign In", username, pwd;
 var bg;
 
 function setup() {
-  createCanvas(414, 896);
+  createCanvas(windowWidth, windowHeight);
   bg = color('blue');
   textSize(40);
   textAlign(CENTER);
