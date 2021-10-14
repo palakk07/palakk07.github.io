@@ -136,6 +136,10 @@ function screen4() {
 
 function screen5() {
   background(bg5);
+  
+  image(tab1, width/6 - 25, height - 70, 50, 50);
+  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
 }
 
 function screen6() {
@@ -158,8 +162,8 @@ function touchStarted() {
       case 1:
           if (mouseX >= 30 && 
               mouseX <= width - 30 && 
-              mouseY >= height - 145 && 
-              mouseY <= height - 95) {
+              mouseY >= height - 160 && 
+              mouseY <= height - 110) {
                 screen = 2;
           }
         break;
@@ -183,8 +187,8 @@ function touchStarted() {
       case 3:
           if (mouseX >= width/6 - 25 + width/3 &&
               mouseX <= width/6 + 25 + width/3 &&
-              mouseY >= height - 90 && 
-              mouseY <= height - 40) {
+              mouseY >= height - 70 && 
+              mouseY <= height - 20) {
                 changeTabs(2);
                 screen = 4;
           } else if (mouseX >= width/6 - 25 + 2*width/3 &&
@@ -195,8 +199,8 @@ function touchStarted() {
                 screen = 5;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 && 
-                     mouseY >= 330 && 
-                     mouseY <= 370) {
+                     mouseY >= 305 && 
+                     mouseY <= 355) {
                 changeTabs(2);
                 screen = 4;
           }
@@ -217,13 +221,13 @@ function touchStarted() {
               screen = 5;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 && 
-                     mouseY >= 385 && 
-                     mouseY <= 435) {
+                     mouseY >= 360 && 
+                     mouseY <= 410) {
               screen = 8;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 &&
-                     mouseY >= 460 &&
-                     mouseY <= 510) {
+                     mouseY >= 445 &&
+                     mouseY <= 495) {
             screen = 6;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 &&
