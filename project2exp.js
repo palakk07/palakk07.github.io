@@ -16,6 +16,9 @@ var bg4, bg6;
 //8
 var bg8;
 
+//9
+var bg9;
+
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
@@ -27,6 +30,7 @@ function preload() {
   bg4 = loadImage('./images/4.png');
   bg6 = loadImage('./images/6.png');
   bg8 = loadImage('./images/8.png');
+  bg9 = loadImage('./images/9.png');
   tab1 = loadImage('./images/home_1.png');
   tab2 = loadImage('./images/schedule_1.png');
   tab3 = loadImage('./images/shop_1.png');
@@ -87,6 +91,10 @@ function draw() {
       case 8:
         screen8();
         break;
+      
+    case 9:
+      screen9();
+      break;
         
       default:
         //
@@ -147,6 +155,10 @@ function screen6() {
 
 function screen8() {
   background(bg8);
+}
+
+function screen9() {
+  background(bg9);
 }
 
 function touchStarted() {
@@ -221,6 +233,11 @@ function touchStarted() {
                      mouseY >= 545 &&
                      mouseY <= 575) {
             screen = 6;
+          } else if (mouseX >= 40 && 
+                     mouseX <= width - 80 &&
+                     mouseY >= height - 260 &&
+                     mouseY <= height - 220) {
+            screen = 9;
           }
         break;
         
