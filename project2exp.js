@@ -123,7 +123,7 @@ function touchStarted() {
       screen = 2;
     }
   } else if (screen == 2) {
-      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 396 && mouseY <= height - 350) {
+      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 346 && mouseY <= height - 300) {
         changeTabs(1);
         screen = 3; 
       } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 50 && mouseY <= 80) {
