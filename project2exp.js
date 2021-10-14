@@ -24,7 +24,7 @@ function preload() {
   bg2 = loadImage('./images/2_1.png');
   bg3 = loadImage('./images/3_1.png');
   bg4 = loadImage('./images/4_1.png');
-  bg4 = loadImage('./images/5_1.png');
+  bg5 = loadImage('./images/5_1.png');
   bg6 = loadImage('./images/6_1.png');
   bg8 = loadImage('./images/8_1.png');
   bg9 = loadImage('./images/9_1.png');
@@ -44,11 +44,11 @@ function setup() {
   textAlign(CENTER);
   screen1Setup();
   username = createInput();
-  username.position(40, 300);
+  username.position(40, 325);
   username.size(width - 80, 35);
   username.hide();
   password = createInput('', 'password');
-  password.position(40, 400);
+  password.position(40, 440);
   password.size(width - 80, 35);
   password.hide();
 }
@@ -136,14 +136,6 @@ function screen4() {
 
 function screen5() {
   background(bg5);
-  
-  textSize(50);
-  fill('brown');
-  text('Hot Spot Cafe', 20, 100, width - 40, 50);
-  
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
 }
 
 function screen6() {
@@ -166,8 +158,8 @@ function touchStarted() {
       case 1:
           if (mouseX >= 30 && 
               mouseX <= width - 30 && 
-              mouseY >= height - 130 && 
-              mouseY <= height - 80) {
+              mouseY >= height - 145 && 
+              mouseY <= height - 95) {
                 screen = 2;
           }
         break;
@@ -191,8 +183,8 @@ function touchStarted() {
       case 3:
           if (mouseX >= width/6 - 25 + width/3 &&
               mouseX <= width/6 + 25 + width/3 &&
-              mouseY >= height - 80 && 
-              mouseY <= height - 30) {
+              mouseY >= height - 90 && 
+              mouseY <= height - 40) {
                 changeTabs(2);
                 screen = 4;
           } else if (mouseX >= width/6 - 25 + 2*width/3 &&
