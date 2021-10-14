@@ -4,7 +4,7 @@ var screen = 1;
 var bg1;
 
 //2
-var bg2,username;
+var bg2,username, password;
 
 //3
 var bg3;
@@ -32,6 +32,10 @@ function setup() {
   username.position(40, 250);
   username.size(width - 80, 35);
   username.hide();
+  password = createInput('', 'password');
+  password.position(40, 435);
+  password.size(width - 80, 35);
+  password.hide();
 }
   
 function screen1Setup() {
@@ -66,6 +70,11 @@ function screen2() {
   username.style('border', 'none');
   username.style('outline', 'none');
   username.style('color', 'white');
+  password.show();
+  password.style('background-color', 'transparent');
+  password.style('border', 'none');
+  password.style('outline', 'none');
+  password.style('color', 'white');
 }
 
 function screen3() {
