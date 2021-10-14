@@ -123,10 +123,10 @@ function touchStarted() {
       screen = 2;
     }
   } else if (screen == 2) {
-      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 346 && mouseY <= height - 300) {
+      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 366 && mouseY <= height - 320) {
         changeTabs(1);
         screen = 3; 
-      } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 50 && mouseY <= 80) {
+      } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 65 && mouseY <= 95) {
         screen = 1;
       }
     } else if (screen == 3) {
