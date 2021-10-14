@@ -139,18 +139,15 @@ function screen8() {
 function touchStarted() {
   switch (screen) {
       case 1:
-        if (screen == 1) {
           if (mouseX >= 30 && 
               mouseX <= width - 30 && 
               mouseY >= height - 269 && 
               mouseY <= height - 223) {
                 screen = 2;
           }
-        }
         break;
         
       case 2:
-          if (screen == 2) {
             if (mouseX >= 30 && 
                 mouseX <= width - 30 && 
                 mouseY >= height - 350 && 
@@ -160,11 +157,9 @@ function touchStarted() {
             } else if (mouseX >= 50 && mouseX <= 65 && mouseY >= 100 && mouseY <= 130) {
                 screen = 1;
           }
-        } 
         break;
         
       case 3:
-        if (screen == 3) {
           if (mouseX >= width/6 - 25 + width/3 &&
               mouseX <= width/6 + 25 + width/3 &&
               mouseY >= height - 70 && 
@@ -184,11 +179,9 @@ function touchStarted() {
                 changeTabs(2);
                 screen = 4;
           }
-        } 
         break;  
         
       case 4:
-        if (screen == 4) {
           if (mouseX >= width/6 - 25 && 
               mouseX <= width/6 + 25 &&
               mouseY >= height - 70 &&
@@ -207,11 +200,9 @@ function touchStarted() {
                      mouseY <= 520) {
               screen = 8;
           }
-        } 
         break;
         
       case 5:
-        if (screen == 5) {
           if (mouseX >= width/6 - 25 && 
               mouseX <= width/6 + 25 &&
               mouseY >= height - 70 &&
@@ -225,7 +216,6 @@ function touchStarted() {
                 changeTabs(2);
                 screen = 4;
           }
-        }
         break;  
         
     case 8:
