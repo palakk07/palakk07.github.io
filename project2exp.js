@@ -112,7 +112,7 @@ function screen3() {
 }
 
 function screen4() {
-  background(bg3);
+  background(bg4);
   
   image(tab1, width/6 - 25, height - 70, 50, 50);
   image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
@@ -179,8 +179,8 @@ function touchStarted() {
                 screen = 5;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 && 
-                     mouseY >= 360 && 
-                     mouseY <= 400) {
+                     mouseY >= 330 && 
+                     mouseY <= 370) {
                 changeTabs(2);
                 screen = 4;
           }
