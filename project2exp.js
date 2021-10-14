@@ -11,7 +11,7 @@ var bg3;
 var tab1, tab2, tab3;
 
 function preload() {
-  bg1 = loadImage('./images/bg1.png');
+  bg1 = loadImage('./images/1.png');
   bg2 = loadImage('./images/bg2.png');
   bg3 = loadImage('./images/bg3.png');
   tab1 = loadImage('./images/home_1.png');
@@ -119,7 +119,7 @@ function screen5() {
 
 function touchStarted() {
   if (screen == 1) {
-    if (mouseX >= 20 && mouseX <= width - 40 && mouseY >= height - 150 && mouseY >= height - 200) {
+    if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 269 && mouseY <= height - 223) {
       screen = 2;
     }
   } else if (screen == 2) {
