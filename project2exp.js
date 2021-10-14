@@ -4,7 +4,7 @@ var screen = 1;
 var bg1;
 
 //2
-var bg2;
+var bg2,username;
 
 //3
 var bg3;
@@ -28,6 +28,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   textAlign(CENTER);
   screen1Setup();
+  username = createInput();
+  username.position(40, 270);
+  username.size(width - 80, 35);
+  username.hide();
 }
   
 function screen1Setup() {
@@ -57,6 +61,11 @@ function screen1() {
 
 function screen2() {
   background(bg2);
+  username.show();
+  username.style('background-color', 'transparent');
+  username.style('border', 'none');
+  username.style('outline', 'none');
+  username.style('color', 'white');
 }
 
 function screen3() {
