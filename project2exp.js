@@ -33,7 +33,7 @@ function setup() {
   username.size(width - 80, 35);
   username.hide();
   password = createInput('', 'password');
-  password.position(40, 400);
+  password.position(40, 350);
   password.size(width - 80, 35);
   password.hide();
 }
@@ -71,7 +71,7 @@ function screen2() {
   username.style('outline', 'none');
   username.style('color', 'white');
   password.show();
-  password.style('background-color', 'transparent');
+  password.style('background-color', 'red');
   password.style('border', 'none');
   password.style('outline', 'none');
   password.style('color', 'white');
@@ -132,7 +132,7 @@ function touchStarted() {
       screen = 2;
     }
   } else if (screen == 2) {
-      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 350 && mouseY <= height - 300) {
+      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 320 && mouseY <= height - 270) {
         changeTabs(1);
         screen = 3; 
       } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 65 && mouseY <= 95) {
