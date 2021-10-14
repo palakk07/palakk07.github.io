@@ -33,7 +33,7 @@ function setup() {
   username.size(width - 80, 35);
   username.hide();
   password = createInput('', 'password');
-  password.position(40, 435);
+  password.position(40, 500);
   password.size(width - 80, 35);
   password.hide();
 }
