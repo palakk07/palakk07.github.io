@@ -10,10 +10,18 @@ var bg2,username, password;
 var bg3;
 var tab1, tab2, tab3;
 
+//4
+var bg4;
+
+//8
+var bg8;
+
 function preload() {
   bg1 = loadImage('./images/1.png');
   bg2 = loadImage('./images/2.png');
   bg3 = loadImage('./images/3.png');
+  bg4 = loadImage('./images/4.png');
+  bg8 = loadImage('./images/8.png');
   tab1 = loadImage('./images/home_1.png');
   tab2 = loadImage('./images/schedule_1.png');
   tab3 = loadImage('./images/shop_1.png');
@@ -46,17 +54,34 @@ function screen1Setup() {
 }
 
 function draw() {
-  if (screen == 1) {
-    screen1();
-  } else if (screen == 2) {
-    screen2();
-  } else if (screen == 3) {
-    screen3();
-  } else if (screen == 4) {
-    screen4();
-  } else if ( screen == 5) {
-    screen5();
-  }
+  switch(screen) {
+      case 1:
+        screen1();
+        break;
+        
+      case 2:
+        screen2();
+        break;
+        
+      case 3:
+        screen3();
+        break;
+        
+      case 4:
+        screen4();
+        break;
+        
+      case 5:
+        screen5();
+        break;
+        
+      case 8:
+        screen8();
+        break;
+        
+      default:
+        //
+    }
 }
 
 function screen1() {
@@ -112,7 +137,20 @@ function screen5() {
   image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
 }
 
+function screen8() {
+  background(bg8);
+}
+
 function touchStarted() {
+      switch (screen) {
+    case 8:
+      screen = 4;
+      break;
+      
+    default:
+      //
+  }
+  
   if (screen == 1) {
     if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 246 && mouseY <= height - 200) {
       screen = 2;
@@ -158,6 +196,8 @@ function touchStarted() {
                 mouseY <= height - 20) {
         changeTabs(3);
         screen = 5;
+      } else if (mouseX >= 50 && mouseX <= windowWidth - 100 && mouseY >= windowHeight - 456 && mouseY <= windowHeight - 410) {
+        screen = 8;
       }
     } else if (screen == 5) {
       if (mouseX >= width/6 - 25 && 
