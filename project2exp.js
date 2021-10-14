@@ -142,7 +142,97 @@ function screen8() {
 }
 
 function touchStarted() {
-      switch (screen) {
+  switch (screen) {
+      case 1:
+        if (screen == 1) {
+          if (mouseX >= 30 && 
+              mouseX <= width - 30 && 
+              mouseY >= height - 269 && 
+              mouseY <= height - 223) {
+                screen = 2;
+          }
+        }
+        break;
+        
+      case 2:
+          if (screen == 2) {
+            if (mouseX >= 30 && 
+                mouseX <= width - 30 && 
+                mouseY >= height - 350 && 
+                mouseY <= height - 300) {
+                 changeTabs(1);
+                  screen = 3; 
+            } else if (mouseX >= 50 && mouseX <= 65 && mouseY >= 100 && mouseY <= 130) {
+                screen = 1;
+          }
+        } 
+        break;
+        
+      case 3:
+        if (screen == 3) {
+          if (mouseX >= width/6 - 25 + width/3 &&
+              mouseX <= width/6 + 25 + width/3 &&
+              mouseY >= height - 70 && 
+              mouseY <= height - 20) {
+                changeTabs(2);
+                screen = 4;
+          } else if (mouseX >= width/6 - 25 + 2*width/3 &&
+                     mouseX <= width/6 + 25 + 2*width/3 &&
+                     mouseY >= height - 70 &&
+                     mouseY <= height - 20) {
+                changeTabs(3);
+                screen = 5;
+          } else if (mouseX >= 40 && 
+                     mouseX <= width - 80 && 
+                     mouseY >= 360 && 
+                     mouseY <= 400) {
+                changeTabs(2);
+                screen = 4;
+          }
+        } 
+        break;  
+        
+      case 4:
+        if (screen == 4) {
+          if (mouseX >= width/6 - 25 && 
+              mouseX <= width/6 + 25 &&
+              mouseY >= height - 70 &&
+              mouseY <= height - 20) {
+                changeTabs(1);
+                screen = 3;
+          } else if (mouseX >= width/6 - 25 + 2*width/3 &&
+                     mouseX <= width/6 + 25 + 2*width/3 &&
+                     mouseY >= height - 70 &&
+                     mouseY <= height - 20) {
+              changeTabs(3);
+              screen = 5;
+          } else if (mouseX >= 50 && 
+                     mouseX <= width - 100 && 
+                     mouseY >= 470 && 
+                     mouseY <= 520) {
+              screen = 8;
+          }
+        } 
+        break;
+        
+      case 5:
+        if (screen == 5) {
+          if (mouseX >= width/6 - 25 && 
+              mouseX <= width/6 + 25 &&
+              mouseY >= height - 70 &&
+              mouseY <= height - 20) {
+                changeTabs(1);
+                screen = 3;
+          } else if (mouseX >= width/6 - 25 + width/3 &&
+                     mouseX <= width/6 + 25 + width/3 &&
+                     mouseY >= height - 70 && 
+                     mouseY <= height - 20) {
+                changeTabs(2);
+                screen = 4;
+          }
+        }
+        break;  
+        
     case 8:
       screen = 4;
       break;
@@ -150,70 +240,6 @@ function touchStarted() {
     default:
       //
   }
-  
-  if (screen == 1) {
-    if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 246 && mouseY <= height - 200) {
-      screen = 2;
-    }
-  } else if (screen == 2) {
-      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 305 && mouseY <= height - 260) {
-        changeTabs(1);
-        screen = 3;
-        username.hide();
-        password.hide();
-      } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 65 && mouseY <= 95) {
-        screen = 1;
-        username.hide();
-        password.hide();
-      }
-    } else if (screen == 3) {
-      if (mouseX >= width/6 - 25 + width/3 &&
-                mouseX <= width/6 + 25 + width/3 &&
-                mouseY >= height - 70 && 
-                mouseY <= height - 20) {
-        changeTabs(2);
-        screen = 4;
-      } else if (mouseX >= width/6 - 25 + 2*width/3 &&
-                mouseX <= width/6 + 25 + 2*width/3 &&
-                mouseY >= height - 70 &&
-                mouseY <= height - 20) {
-        changeTabs(3);
-        screen = 5;
-      } else if (mouseX >= 40 && mouseX <= width - 80 && mouseY >= 325 && mouseY <= 365) {
-        changeTabs(2);
-        screen = 4;
-      }
-    } else if (screen == 4) {
-      if (mouseX >= width/6 - 25 && 
-         mouseX <= width/6 + 25 &&
-         mouseY >= height - 70 &&
-         mouseY <= height - 20) {
-        changeTabs(1);
-        screen = 3;
-      } else if (mouseX >= width/6 - 25 + 2*width/3 &&
-                mouseX <= width/6 + 25 + 2*width/3 &&
-                mouseY >= height - 70 &&
-                mouseY <= height - 20) {
-        changeTabs(3);
-        screen = 5;
-      } else if (mouseX >= 50 && mouseX <= windowWidth - 100 && mouseY >= windowHeight - 456 && mouseY <= windowHeight - 410) {
-        screen = 8;
-      }
-    } else if (screen == 5) {
-      if (mouseX >= width/6 - 25 && 
-         mouseX <= width/6 + 25 &&
-         mouseY >= height - 70 &&
-         mouseY <= height - 20) {
-        changeTabs(1);
-        screen = 3;
-      } else if (mouseX >= width/6 - 25 + width/3 &&
-                mouseX <= width/6 + 25 + width/3 &&
-                mouseY >= height - 70 && 
-                mouseY <= height - 20) {
-        changeTabs(2);
-        screen = 4;
-      }
-    }
 }
 
 function changeTabs(tab) {
