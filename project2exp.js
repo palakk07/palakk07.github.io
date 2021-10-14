@@ -166,8 +166,8 @@ function touchStarted() {
       case 1:
           if (mouseX >= 30 && 
               mouseX <= width - 30 && 
-              mouseY >= height - 280 && 
-              mouseY <= height - 230) {
+              mouseY >= height - 290 && 
+              mouseY <= height - 240) {
                 screen = 2;
           }
         break;
@@ -175,8 +175,8 @@ function touchStarted() {
       case 2:
             if (mouseX >= 30 && 
                 mouseX <= width - 30 && 
-                mouseY >= height - 330 && 
-                mouseY <= height - 280) {
+                mouseY >= height - 340 && 
+                mouseY <= height - 290) {
                  changeTabs(1);
                   screen = 3; 
                 username.hide();
@@ -225,13 +225,13 @@ function touchStarted() {
               screen = 5;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 && 
-                     mouseY >= 470 && 
-                     mouseY <= 520) {
+                     mouseY >= 370 && 
+                     mouseY <= 420) {
               screen = 8;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 &&
-                     mouseY >= 545 &&
-                     mouseY <= 575) {
+                     mouseY >= 450 &&
+                     mouseY <= 475) {
             screen = 6;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 &&
