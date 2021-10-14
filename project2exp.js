@@ -53,15 +53,6 @@ function draw() {
 
 function screen1() {
   background(bg1);
-  
-  fill('brown');
-  rect(20, height - 80, width - 40, 50, 25);
-  rect(20, height - 150, width - 40, 50, 25);
-  
-  fill('white');
-  textSize(32);
-  text('Log In', 20, height - 140, width - 40, 50);
-  text('Create An Account', 20, height - 70, width - 40, 50);
 }
 
 function screen2() {
