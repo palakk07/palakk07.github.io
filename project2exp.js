@@ -42,8 +42,8 @@ function preload() {
 }
 
 function setup() {
-//   createCanvas(windowWidth, windowHeight);
-  createCanvas(428, 927);
+  createCanvas(windowWidth, windowHeight);
+//   createCanvas(428, 927);
   textAlign(CENTER);
   screen1Setup();
   username = createInput();
@@ -104,6 +104,9 @@ function draw() {
 
 function screen1() {
   background(bg1);
+  textSize(32);
+  text(windowWidth, 50, 50);
+  text(windowHeight, 50, 100);
 }
 
 function screen2() {
