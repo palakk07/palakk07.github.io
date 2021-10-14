@@ -199,8 +199,8 @@ function touchStarted() {
                 screen = 5;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 && 
-                     mouseY >= 305 && 
-                     mouseY <= 355) {
+                     mouseY >= 280 && 
+                     mouseY <= 330) {
                 changeTabs(2);
                 screen = 4;
           }
@@ -221,13 +221,13 @@ function touchStarted() {
               screen = 5;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 && 
-                     mouseY >= 360 && 
-                     mouseY <= 410) {
+                     mouseY >= 445 && 
+                     mouseY <= 495) {
               screen = 8;
           } else if (mouseX >= 50 && 
                      mouseX <= width - 100 &&
-                     mouseY >= 445 &&
-                     mouseY <= 495) {
+                     mouseY >= 530 &&
+                     mouseY <= 580) {
             screen = 6;
           } else if (mouseX >= 40 && 
                      mouseX <= width - 80 &&
