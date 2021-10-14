@@ -11,7 +11,7 @@ var bg3;
 var tab1, tab2, tab3;
 
 //4
-var bg4;
+var bg4, bg6;
 
 //8
 var bg8;
@@ -21,6 +21,7 @@ function preload() {
   bg2 = loadImage('./images/2.png');
   bg3 = loadImage('./images/3.png');
   bg4 = loadImage('./images/4.png');
+  bg6 = loadImage('./images/6.png');
   bg8 = loadImage('./images/8.png');
   tab1 = loadImage('./images/home_1.png');
   tab2 = loadImage('./images/schedule_1.png');
@@ -73,6 +74,10 @@ function draw() {
         
       case 5:
         screen5();
+        break;
+      
+      case 6:
+        screen6();
         break;
         
       case 8:
@@ -130,6 +135,10 @@ function screen5() {
   image(tab1, width/6 - 25, height - 70, 50, 50);
   image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
   image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+}
+
+function screen6() {
+  image(bg6, 0, 0, width, height);
 }
 
 function screen8() {
@@ -199,6 +208,11 @@ function touchStarted() {
                      mouseY >= 470 && 
                      mouseY <= 520) {
               screen = 8;
+          } else if (mouseX >= 50 && 
+                     mouseX <= width - 100 &&
+                     mouseY >= 545 &&
+                     mouseY <= 575) {
+            screen = 6;
           }
         break;
         
@@ -216,7 +230,12 @@ function touchStarted() {
                 changeTabs(2);
                 screen = 4;
           }
-        break;  
+        break;
+      
+       case 6:
+        bg4 = loadImage('./images/7.png');
+        screen = 4;
+        break;
         
     case 8:
       screen = 4;
