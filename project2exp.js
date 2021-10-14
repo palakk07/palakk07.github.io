@@ -29,7 +29,7 @@ function setup() {
   textAlign(CENTER);
   screen1Setup();
   username = createInput();
-  username.position(40, 270);
+  username.position(40, 250);
   username.size(width - 80, 35);
   username.hide();
 }
