@@ -12,7 +12,7 @@ var tab1, tab2, tab3;
 
 function preload() {
   bg1 = loadImage('./images/1.png');
-  bg2 = loadImage('./images/bg2.png');
+  bg2 = loadImage('./images/2.png');
   bg3 = loadImage('./images/bg3.png');
   tab1 = loadImage('./images/home_1.png');
   tab2 = loadImage('./images/schedule_1.png');
@@ -114,8 +114,10 @@ function touchStarted() {
       screen = 2;
     }
   } else if (screen == 2) {
-    changeTabs(1);
-      screen = 3;
+      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 396 && mouseY <= height - 350) {
+        changeTabs(1);
+        screen = 3; 
+      }
     } else if (screen == 3) {
       if (mouseX >= width/6 - 25 + width/3 &&
                 mouseX <= width/6 + 25 + width/3 &&
