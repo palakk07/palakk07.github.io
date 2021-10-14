@@ -71,7 +71,7 @@ function screen2() {
   username.style('outline', 'none');
   username.style('color', 'white');
   password.show();
-  password.style('background-color', 'red');
+  password.style('background-color', 'transparent');
   password.style('border', 'none');
   password.style('outline', 'none');
   password.style('color', 'white');
@@ -118,11 +118,15 @@ function touchStarted() {
       screen = 2;
     }
   } else if (screen == 2) {
-      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 320 && mouseY <= height - 270) {
+      if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 305 && mouseY <= height - 260) {
         changeTabs(1);
-        screen = 3; 
+        screen = 3;
+        username.hide();
+        password.hide();
       } else if (mouseX >= 50 && mouseX <= 80 && mouseY >= 65 && mouseY <= 95) {
         screen = 1;
+        username.hide();
+        password.hide();
       }
     } else if (screen == 3) {
       if (mouseX >= width/6 - 25 + width/3 &&
