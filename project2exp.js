@@ -24,7 +24,7 @@ function draw() {
 }
 
 function screen1() {
-  background(220);
+  background(bg1);
   
   fill('brown');
   rect(20, height - 80, width - 40, 50, 25);
