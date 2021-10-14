@@ -43,11 +43,11 @@ function setup() {
   textAlign(CENTER);
   screen1Setup();
   username = createInput();
-  username.position(40, 250);
+  username.position(40, 300);
   username.size(width - 80, 35);
   username.hide();
   password = createInput('', 'password');
-  password.position(40, 350);
+  password.position(40, 400);
   password.size(width - 80, 35);
   password.hide();
 }
