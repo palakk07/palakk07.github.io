@@ -121,46 +121,46 @@ function screen3() {
   background(bg3);
   // image(bg3, 0, 0, width, height);
   
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function screen4() {
   background(bg4);
   
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function screen5() {
   background(bg5);
   
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function screen6() {
   image(bg6, 0, 0, width, height);
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function screen8() {
   background(bg8);
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function screen9() {
   background(bg9);
-  image(tab1, width/6 - 25, height - 70, 50, 50);
-  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
-  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
+  image(tab1, width/6 - 25, height - 70, 33, 33);
+  image(tab2, width/6 - 25 + width/3, height - 70, 33, 33);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 33, 33);
 }
 
 function touchStarted() {
