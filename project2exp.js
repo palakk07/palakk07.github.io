@@ -11,7 +11,7 @@ var bg3;
 var tab1, tab2, tab3;
 
 //4
-var bg4, bg6;
+var bg4, bg5, bg6;
 
 //8
 var bg8;
@@ -24,6 +24,7 @@ function preload() {
   bg2 = loadImage('./images/2_1.png');
   bg3 = loadImage('./images/3_1.png');
   bg4 = loadImage('./images/4_1.png');
+  bg4 = loadImage('./images/5_1.png');
   bg6 = loadImage('./images/6_1.png');
   bg8 = loadImage('./images/8_1.png');
   bg9 = loadImage('./images/9_1.png');
@@ -134,8 +135,7 @@ function screen4() {
 }
 
 function screen5() {
-  background(bg3);
-  // image(bg3, 0, 0, width, height);
+  background(bg5);
   
   textSize(50);
   fill('brown');
