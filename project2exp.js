@@ -4,7 +4,7 @@ var screen = 1;
 var bg1;
 
 function preload() {
-  bg1 = createImg('images/bg1.jpg');
+  bg1 = createImg('./images/bg1.jpg');
 }
 
 function setup() {
