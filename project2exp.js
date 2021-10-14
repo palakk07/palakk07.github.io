@@ -258,7 +258,7 @@ function touchStarted() {
         break;
       
        case 6:
-        bg4 = loadImage('./images/7.png');
+        bg4 = loadImage('./images/7_1.png');
         screen = 4;
         break;
         
