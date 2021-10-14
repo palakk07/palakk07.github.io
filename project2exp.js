@@ -113,11 +113,6 @@ function screen3() {
 
 function screen4() {
   background(bg3);
-  // image(bg3, 0, 0, width, height);
-  
-  textSize(50);
-  fill('brown');
-  text('Hot Spot Cafe', 20, 100, width - 40, 50);
   
   image(tab1, width/6 - 25, height - 70, 50, 50);
   image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
