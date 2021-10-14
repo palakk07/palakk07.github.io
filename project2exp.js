@@ -21,12 +21,12 @@ var bg9;
 
 function preload() {
   bg1 = loadImage('./images/1.png');
-  bg2 = loadImage('./images/2.png');
-  bg3 = loadImage('./images/3.png');
-  bg4 = loadImage('./images/4.png');
-  bg6 = loadImage('./images/6.png');
-  bg8 = loadImage('./images/8.png');
-  bg9 = loadImage('./images/9.png');
+  bg2 = loadImage('./images/2_1.png');
+  bg3 = loadImage('./images/3_1.png');
+  bg4 = loadImage('./images/4_1.png');
+  bg6 = loadImage('./images/6_1.png');
+  bg8 = loadImage('./images/8_1.png');
+  bg9 = loadImage('./images/9_1.png');
   tab1 = loadImage('./images/home_1.png');
   tab2 = loadImage('./images/schedule_1.png');
   tab3 = loadImage('./images/shop_1.png');
