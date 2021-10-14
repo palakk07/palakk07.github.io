@@ -19,10 +19,6 @@ var bg8;
 //9
 var bg9;
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
 function preload() {
   bg1 = loadImage('./images/1.png');
   bg2 = loadImage('./images/2.png');
@@ -104,9 +100,6 @@ function draw() {
 
 function screen1() {
   background(bg1);
-  textSize(32);
-  text(windowWidth, 50, 50);
-  text(windowHeight, 50, 100);
 }
 
 function screen2() {
