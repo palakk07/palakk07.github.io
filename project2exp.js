@@ -119,7 +119,7 @@ function screen5() {
 
 function touchStarted() {
   if (screen == 1) {
-    if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 269 && mouseY <= height - 223) {
+    if (mouseX >= 30 && mouseX <= width - 30 && mouseY >= height - 300 && mouseY <= height - 254) {
       screen = 2;
     }
   } else if (screen == 2) {
