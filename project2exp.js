@@ -16,6 +16,10 @@ var bg4, bg6;
 //8
 var bg8;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function preload() {
   bg1 = loadImage('./images/1.png');
   bg2 = loadImage('./images/2.png');
@@ -150,8 +154,8 @@ function touchStarted() {
       case 1:
           if (mouseX >= 30 && 
               mouseX <= width - 30 && 
-              mouseY >= height - 269 && 
-              mouseY <= height - 223) {
+              mouseY >= height - 280 && 
+              mouseY <= height - 230) {
                 screen = 2;
           }
         break;
@@ -159,12 +163,16 @@ function touchStarted() {
       case 2:
             if (mouseX >= 30 && 
                 mouseX <= width - 30 && 
-                mouseY >= height - 350 && 
-                mouseY <= height - 300) {
+                mouseY >= height - 330 && 
+                mouseY <= height - 280) {
                  changeTabs(1);
                   screen = 3; 
+                username.hide();
+              password.hide();
             } else if (mouseX >= 50 && mouseX <= 65 && mouseY >= 100 && mouseY <= 130) {
                 screen = 1;
+              username.hide();
+              password.hide();
           }
         break;
         
