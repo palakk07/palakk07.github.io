@@ -159,6 +159,9 @@ function screen8() {
 
 function screen9() {
   background(bg9);
+  image(tab1, width/6 - 25, height - 70, 50, 50);
+  image(tab2, width/6 - 25 + width/3, height - 70, 50, 50);
+  image(tab3, width/6 - 25 + 2*width/3, height - 70, 50, 50);
 }
 
 function touchStarted() {
@@ -265,6 +268,22 @@ function touchStarted() {
     case 8:
       screen = 4;
       break;
+      
+     case 9:
+        if (mouseX >= width/6 - 25 && 
+              mouseX <= width/6 + 25 &&
+              mouseY >= height - 70 &&
+              mouseY <= height - 20) {
+                changeTabs(1);
+                screen = 3;
+          } else if (mouseX >= width/6 - 25 + 2*width/3 &&
+                     mouseX <= width/6 + 25 + 2*width/3 &&
+                     mouseY >= height - 70 &&
+                     mouseY <= height - 20) {
+              changeTabs(3);
+              screen = 5;
+          }
+        break;
       
     default:
       //
