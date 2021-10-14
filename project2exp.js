@@ -137,6 +137,9 @@ function touchStarted() {
                 mouseY <= height - 20) {
         changeTabs(3);
         screen = 5;
+      } else if (mouseX >= 40 && mouseX <= width - 80 && mouseY >= 325 && mouseY <= 365) {
+        changeTabs(2);
+        screen = 4;
       }
     } else if (screen == 4) {
       if (mouseX >= width/6 - 25 && 
