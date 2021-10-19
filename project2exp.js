@@ -40,7 +40,7 @@ function preload() {
 
 function setup() {
 //   createCanvas(windowWidth, windowHeight);
-  createCanvas(428, 927);
+  createCanvas(428, 850);
   textAlign(CENTER);
   screen1Setup();
   username = createInput();
