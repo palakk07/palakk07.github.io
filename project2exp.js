@@ -24,7 +24,7 @@ function preload() {
   bg2 = loadImage('./images/2_1.png');
   bg3 = loadImage('./images/3_1.png');
   bg4 = loadImage('./images/4_1.png');
-  bg5 = loadImage('./images/5_1.png');
+  bg5 = loadImage('./images/5_2.png');
   bg6 = loadImage('./images/6_1.png');
   bg8 = loadImage('./images/8_1.png');
   bg9 = loadImage('./images/9_1.png');
