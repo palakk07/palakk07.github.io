@@ -178,8 +178,8 @@ function touchStarted() {
       case 2:
             if (mouseX >= 30 && 
                 mouseX <= width - 30 && 
-                mouseY >= height - 220 && 
-                mouseY <= height - 170) {
+                mouseY >= height - 215 && 
+                mouseY <= height - 165) {
                  changeTabs(1);
                   screen = 3; 
                 username.hide();
